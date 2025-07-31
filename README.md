@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ADmyBRAND AI Suite – Modern SaaS Landing Page 🚀
 
-## Getting Started
+A high-performance, visually stunning SaaS landing page built with **Next.js**, **TypeScript**, **Tailwind CSS**, and **Framer Motion**, developed as part of the **AI Vibe Coder Internship Task B** at ADmyBRAND.
 
-First, run the development server:
+> ✅ Live Demo: https://brandlyzer.netlify.app/
+> 📦 GitHub Repo: [github.com/Sandhyapyla/admybrand-saas-landing-page](https://github.com/Sandhyapyla/admybrand-saas-landing-page)
 
-```bash
+---
+
+## 🧩 Features Implemented
+
+| Feature | Description |
+|--------|-------------|
+| ✅ **Hero Section** | Stunning glassmorphism with CTA & animations |
+| ✅ **FAQ Section** | Framer Motion-based expandable accordion |
+| ✅ **Reusable Components** | Modular components for buttons, cards, layouts |
+| ✅ **Interactive Pricing Calculator** | Real-time feature toggling with pricing updates |
+| ✅ **Blog/Resources Section** | Articles component to display insights |
+| ✅ **Responsive Design** | Fully mobile & desktop optimized |
+
+---
+
+## ⚙️ Tech Stack
+
+- **Frontend**: Next.js (App Router) + TypeScript
+- **Styling**: Tailwind CSS + Framer Motion
+- **Icons**: Lucide React
+- **Deployment**: Netlify
+
+---
+
+## 🛠️ Getting Started (Local Setup)
+
+1. **Clone the Repository**
+
+git clone https://github.com/Sandhyapyla/admybrand-saas-landing-page.git
+cd admybrand-saas-landing-page
+Install Dependencies
+
+npm install
+# or
+yarn
+Run the Development Server
+
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open http://localhost:3000 to view the project locally.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🚀 Deployment
+This project is deployed on Netlify.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Live Demo: https://brandlyzer.netlify.app/
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Steps to deploy:
 
-## Learn More
+Push your code to GitHub
 
-To learn more about Next.js, take a look at the following resources:
+Connect your repo to Netlify
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Add NETLIFY_NEXT_PLUGIN=true in environment variables (optional)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Netlify auto-deploys on each push
 
-## Deploy on Vercel
+📁 Folder Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+admybrand-saas-landing-page/
+│
+├── app/                 # Pages & routing (App Router)
+├── components/          # Reusable UI components
+├── public/              # Static assets (images, icons)
+├── styles/              # Tailwind base styles
+├── README.md            # Project documentation
+├── AI_USAGE_REPORT.md   # AI workflow report
+├── next.config.js
+├── package.json
+└── tailwind.config.ts
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+🙋 Author
+Sandhya Pyla
+📧 sandhyaranipyla360@gmail.com
+
+📄 License
+This project is licensed for internship evaluation and demonstration purposes only.
+
+---
+
+
+Once added, push with:
+
+git add README.md
+git commit -m "Added complete README.md"
+git push origin main
