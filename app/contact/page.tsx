@@ -6,7 +6,9 @@ export default function ContactPage() {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
   const [submitted, setSubmitted] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
@@ -20,9 +22,17 @@ export default function ContactPage() {
 
   return (
     <main className="min-h-screen bg-gray-50 p-8 text-gray-800">
-      <h1 className="text-4xl font-bold mb-10 text-center">Contact Us</h1>
+      <h1 className="text-4xl font-bold mb-6 text-center">
+        Contact Us
+      </h1>
+      <p className="text-center text-lg text-gray-600 mb-10">
+        We&apos;d love to hear from you. Let&apos;s connect!
+      </p>
+
       {submitted ? (
-        <p className="text-center text-green-600 text-lg">Thanks for reaching out! We'll get back to you soon.</p>
+        <p className="text-center text-green-600 text-lg">
+          Thanks for reaching out! We&apos;ll get back to you soon.
+        </p>
       ) : (
         <form onSubmit={handleSubmit} className="max-w-xl mx-auto space-y-6">
           <input
@@ -51,7 +61,10 @@ export default function ContactPage() {
             onChange={handleChange}
             required
           />
-          <button type="submit" className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">
+          <button
+            type="submit"
+            className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700"
+          >
             Submit
           </button>
         </form>
